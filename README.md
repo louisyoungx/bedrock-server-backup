@@ -41,6 +41,7 @@
 #### 4. Operation Environment
 
 - [Python 3](https://www.python.org/)
+- Linux with 'zip' and 'unzip' tool
 
 #### 5. Installation Tutorial
 
