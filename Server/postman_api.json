@@ -1,0 +1,1041 @@
+{
+	"info": {
+		"_postman_id": "c768b95e-a10e-429b-aaf3-e3a956fe4de8",
+		"name": "bedrock-server-backup",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/lock",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://www.louisyoung.site:10009/api/lock?lockType=stop",
+					"protocol": "http",
+					"host": [
+						"www",
+						"louisyoung",
+						"site"
+					],
+					"port": "10009",
+					"path": [
+						"api",
+						"lock"
+					],
+					"query": [
+						{
+							"key": "lockType",
+							"value": "monthly",
+							"disabled": true
+						},
+						{
+							"key": "lockType",
+							"value": "daily",
+							"disabled": true
+						},
+						{
+							"key": "lockType",
+							"value": "minutely",
+							"disabled": true
+						},
+						{
+							"key": "lockType",
+							"value": "stop"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "monthly",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://www.louisyoung.site:10009/api/lock?lockType=monthly",
+							"protocol": "http",
+							"host": [
+								"www",
+								"louisyoung",
+								"site"
+							],
+							"port": "10009",
+							"path": [
+								"api",
+								"lock"
+							],
+							"query": [
+								{
+									"key": "lockType",
+									"value": "monthly"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Length",
+							"value": "60"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 04 Oct 2021 16:36:31 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "BaseHTTP/0.6 Python/3.6.8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": \"locked\",\n    \"time\": \"2021-10-5 0:36:31\",\n    \"code\": 200\n}"
+				},
+				{
+					"name": "daliy",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://www.louisyoung.site:10009/api/lock?lockType=daily",
+							"protocol": "http",
+							"host": [
+								"www",
+								"louisyoung",
+								"site"
+							],
+							"port": "10009",
+							"path": [
+								"api",
+								"lock"
+							],
+							"query": [
+								{
+									"key": "lockType",
+									"value": "daily"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Length",
+							"value": "60"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 04 Oct 2021 16:36:45 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "BaseHTTP/0.6 Python/3.6.8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": \"locked\",\n    \"time\": \"2021-10-5 0:36:45\",\n    \"code\": 200\n}"
+				},
+				{
+					"name": "minutely",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://www.louisyoung.site:10009/api/lock?lockType=minutely",
+							"protocol": "http",
+							"host": [
+								"www",
+								"louisyoung",
+								"site"
+							],
+							"port": "10009",
+							"path": [
+								"api",
+								"lock"
+							],
+							"query": [
+								{
+									"key": "lockType",
+									"value": "minutely"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Length",
+							"value": "59"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 04 Oct 2021 16:37:03 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "BaseHTTP/0.6 Python/3.6.8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": \"locked\",\n    \"time\": \"2021-10-5 0:37:3\",\n    \"code\": 200\n}"
+				},
+				{
+					"name": "stop",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://www.louisyoung.site:10009/api/lock?lockType=stop",
+							"protocol": "http",
+							"host": [
+								"www",
+								"louisyoung",
+								"site"
+							],
+							"port": "10009",
+							"path": [
+								"api",
+								"lock"
+							],
+							"query": [
+								{
+									"key": "lockType",
+									"value": "stop"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Length",
+							"value": "60"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 04 Oct 2021 16:37:19 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "BaseHTTP/0.6 Python/3.6.8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": \"locked\",\n    \"time\": \"2021-10-5 0:37:19\",\n    \"code\": 200\n}"
+				}
+			]
+		},
+		{
+			"name": "/unlock",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://www.louisyoung.site:10009/api/unlock?lockType=force",
+					"protocol": "http",
+					"host": [
+						"www",
+						"louisyoung",
+						"site"
+					],
+					"port": "10009",
+					"path": [
+						"api",
+						"unlock"
+					],
+					"query": [
+						{
+							"key": "lockType",
+							"value": "monthly",
+							"disabled": true
+						},
+						{
+							"key": "lockType",
+							"value": "daily",
+							"disabled": true
+						},
+						{
+							"key": "lockType",
+							"value": "minutely",
+							"disabled": true
+						},
+						{
+							"key": "lockType",
+							"value": "stop",
+							"disabled": true
+						},
+						{
+							"key": "lockType",
+							"value": "force"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "monthly",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://www.louisyoung.site:10009/api/unlock?lockType=monthly",
+							"protocol": "http",
+							"host": [
+								"www",
+								"louisyoung",
+								"site"
+							],
+							"port": "10009",
+							"path": [
+								"api",
+								"unlock"
+							],
+							"query": [
+								{
+									"key": "lockType",
+									"value": "monthly"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Length",
+							"value": "58"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 04 Oct 2021 16:02:09 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "BaseHTTP/0.6 Python/3.6.8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": \"locked\",\n    \"time\": \"2021-10-5 0:2:9\",\n    \"code\": 200\n}"
+				},
+				{
+					"name": "daily",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://www.louisyoung.site:10009/api/unlock?lockType=daily",
+							"protocol": "http",
+							"host": [
+								"www",
+								"louisyoung",
+								"site"
+							],
+							"port": "10009",
+							"path": [
+								"api",
+								"unlock"
+							],
+							"query": [
+								{
+									"key": "lockType",
+									"value": "daily"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Length",
+							"value": "58"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 04 Oct 2021 16:02:09 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "BaseHTTP/0.6 Python/3.6.8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": \"locked\",\n    \"time\": \"2021-10-5 0:2:9\",\n    \"code\": 200\n}"
+				},
+				{
+					"name": "minutely",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://www.louisyoung.site:10009/api/unlock?lockType=minutely",
+							"protocol": "http",
+							"host": [
+								"www",
+								"louisyoung",
+								"site"
+							],
+							"port": "10009",
+							"path": [
+								"api",
+								"unlock"
+							],
+							"query": [
+								{
+									"key": "lockType",
+									"value": "minutely"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Length",
+							"value": "58"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 04 Oct 2021 16:02:09 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "BaseHTTP/0.6 Python/3.6.8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": \"locked\",\n    \"time\": \"2021-10-5 0:2:9\",\n    \"code\": 200\n}"
+				},
+				{
+					"name": "stop",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://www.louisyoung.site:10009/api/unlock?lockType=stop",
+							"protocol": "http",
+							"host": [
+								"www",
+								"louisyoung",
+								"site"
+							],
+							"port": "10009",
+							"path": [
+								"api",
+								"unlock"
+							],
+							"query": [
+								{
+									"key": "lockType",
+									"value": "stop"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Length",
+							"value": "62"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 04 Oct 2021 16:35:34 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "BaseHTTP/0.6 Python/3.6.8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": \"unlocked\",\n    \"time\": \"2021-10-5 0:35:34\",\n    \"code\": 200\n}"
+				},
+				{
+					"name": "force",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://www.louisyoung.site:10009/api/unlock?lockType=force",
+							"protocol": "http",
+							"host": [
+								"www",
+								"louisyoung",
+								"site"
+							],
+							"port": "10009",
+							"path": [
+								"api",
+								"unlock"
+							],
+							"query": [
+								{
+									"key": "lockType",
+									"value": "force"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Length",
+							"value": "62"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 04 Oct 2021 16:37:32 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "BaseHTTP/0.6 Python/3.6.8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": \"unlocked\",\n    \"time\": \"2021-10-5 0:37:32\",\n    \"code\": 200\n}"
+				}
+			]
+		},
+		{
+			"name": "/fallback",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://www.louisyoung.site:10009/api/fallback?archiveType=daily&index=0",
+					"protocol": "http",
+					"host": [
+						"www",
+						"louisyoung",
+						"site"
+					],
+					"port": "10009",
+					"path": [
+						"api",
+						"fallback"
+					],
+					"query": [
+						{
+							"key": "archiveType",
+							"value": "monthly",
+							"disabled": true
+						},
+						{
+							"key": "archiveType",
+							"value": "daily"
+						},
+						{
+							"key": "archiveType",
+							"value": "minutely",
+							"disabled": true
+						},
+						{
+							"key": "index",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "monthly",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://www.louisyoung.site:10009/api/fallback?archiveType=monthly&index=0",
+							"protocol": "http",
+							"host": [
+								"www",
+								"louisyoung",
+								"site"
+							],
+							"port": "10009",
+							"path": [
+								"api",
+								"fallback"
+							],
+							"query": [
+								{
+									"key": "archiveType",
+									"value": "monthly"
+								},
+								{
+									"key": "index",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"status": "Bad Gateway",
+					"code": 502,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						}
+					],
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "daliy",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://www.louisyoung.site:10009/api/fallback?archiveType=daily&index=0",
+							"protocol": "http",
+							"host": [
+								"www",
+								"louisyoung",
+								"site"
+							],
+							"port": "10009",
+							"path": [
+								"api",
+								"fallback"
+							],
+							"query": [
+								{
+									"key": "archiveType",
+									"value": "daily"
+								},
+								{
+									"key": "index",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"status": "Bad Gateway",
+					"code": 502,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						}
+					],
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "minutely",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://www.louisyoung.site:10009/api/fallback?archiveType=minutely&index=0",
+							"protocol": "http",
+							"host": [
+								"www",
+								"louisyoung",
+								"site"
+							],
+							"port": "10009",
+							"path": [
+								"api",
+								"fallback"
+							],
+							"query": [
+								{
+									"key": "archiveType",
+									"value": "minutely"
+								},
+								{
+									"key": "index",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"status": "Bad Gateway",
+					"code": 502,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "/archive-list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://www.louisyoung.site:10009/api/archive-list?archiveType=daily",
+					"protocol": "http",
+					"host": [
+						"www",
+						"louisyoung",
+						"site"
+					],
+					"port": "10009",
+					"path": [
+						"api",
+						"archive-list"
+					],
+					"query": [
+						{
+							"key": "archiveType",
+							"value": "monthly",
+							"disabled": true
+						},
+						{
+							"key": "archiveType",
+							"value": "daily"
+						},
+						{
+							"key": "archiveType",
+							"value": "minutely",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "monthly",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://www.louisyoung.site:10009/api/archive-list?archiveType=monthly",
+							"protocol": "http",
+							"host": [
+								"www",
+								"louisyoung",
+								"site"
+							],
+							"port": "10009",
+							"path": [
+								"api",
+								"archive-list"
+							],
+							"query": [
+								{
+									"key": "archiveType",
+									"value": "monthly"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Length",
+							"value": "112"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 04 Oct 2021 16:40:33 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "BaseHTTP/0.6 Python/3.6.8"
+						}
+					],
+					"cookie": [],
+					"body": "{\"data\": [{\"filename\": \"2021-10.zip\", \"time\": \"2021-10-05 00:29:00\"}], \"time\": \"2021-10-5 0:40:33\", \"code\": 200}"
+				},
+				{
+					"name": "daily",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://www.louisyoung.site:10009/api/archive-list?archiveType=daily",
+							"protocol": "http",
+							"host": [
+								"www",
+								"louisyoung",
+								"site"
+							],
+							"port": "10009",
+							"path": [
+								"api",
+								"archive-list"
+							],
+							"query": [
+								{
+									"key": "archiveType",
+									"value": "daily"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Length",
+							"value": "168"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 04 Oct 2021 16:40:53 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "BaseHTTP/0.6 Python/3.6.8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"filename\": \"10-04.zip\",\n            \"time\": \"2021-10-05 00:29:00\"\n        },\n        {\n            \"filename\": \"10-05.zip\",\n            \"time\": \"2021-10-05 00:29:00\"\n        }\n    ],\n    \"time\": \"2021-10-5 0:40:53\",\n    \"code\": 200\n}"
+				},
+				{
+					"name": "minutely",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://www.louisyoung.site:10009/api/archive-list?archiveType=minutely",
+							"protocol": "http",
+							"host": [
+								"www",
+								"louisyoung",
+								"site"
+							],
+							"port": "10009",
+							"path": [
+								"api",
+								"archive-list"
+							],
+							"query": [
+								{
+									"key": "archiveType",
+									"value": "minutely"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Length",
+							"value": "284"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 04 Oct 2021 16:31:14 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "BaseHTTP/0.6 Python/3.6.8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"filename\": \"22:39.zip\",\n            \"time\": \"2021-10-05 00:29:00\"\n        },\n        {\n            \"filename\": \"22:40.zip\",\n            \"time\": \"2021-10-05 00:29:00\"\n        },\n        {\n            \"filename\": \"23:56.zip\",\n            \"time\": \"2021-10-05 00:29:00\"\n        },\n        {\n            \"filename\": \"00:06.zip\",\n            \"time\": \"2021-10-05 00:29:00\"\n        }\n    ],\n    \"time\": \"2021-10-5 0:31:14\",\n    \"code\": 200\n}"
+				}
+			]
+		},
+		{
+			"name": "/lock-status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://www.louisyoung.site:10009/api/lock-status",
+					"protocol": "http",
+					"host": [
+						"www",
+						"louisyoung",
+						"site"
+					],
+					"port": "10009",
+					"path": [
+						"api",
+						"lock-status"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/lock-status",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://www.louisyoung.site:10009/api/lock-status",
+							"protocol": "http",
+							"host": [
+								"www",
+								"louisyoung",
+								"site"
+							],
+							"port": "10009",
+							"path": [
+								"api",
+								"lock-status"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Length",
+							"value": "326"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 04 Oct 2021 16:31:21 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "BaseHTTP/0.6 Python/3.6.8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"status\": false,\n            \"type\": \"ForceLock\",\n            \"time\": null\n        },\n        {\n            \"status\": false,\n            \"type\": \"StopLock\",\n            \"time\": null\n        },\n        {\n            \"status\": false,\n            \"type\": \"MonthlyLock\",\n            \"time\": null\n        },\n        {\n            \"status\": false,\n            \"type\": \"DailyLock\",\n            \"time\": null\n        },\n        {\n            \"status\": false,\n            \"type\": \"MinutelyLock\",\n            \"time\": null\n        }\n    ],\n    \"time\": \"2021-10-5 0:31:21\",\n    \"code\": 200\n}"
+				}
+			]
+		}
+	]
+}
