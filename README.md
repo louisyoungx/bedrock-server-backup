@@ -52,17 +52,13 @@
    cd bedrock-server-backup
    ```
 
-1. ```shell
-   python3 runserver.py
-   ```
-
 #### 6. Usage
 
 1. Edit the configuration items in /Config/config.ini file according to the comment requirements
 
    ```ini
    [Archive]
-   # insert Docker or Local
+   # insert 'Docker' or 'Local'
    MODE = "Docker"
    # Docker container id
    DOCKER_ID = "c2684040eb11"
@@ -72,8 +68,6 @@
    ArchiveFileName = "louis-world"
    ```
 
-   
-
 2. Make sure you are in /bedrock-server-backup and enter
 
    ```sh
@@ -82,7 +76,7 @@
 
 #### 7. TODO
 
-- Web API Docs ( *It's now available, You can preview it at  /Server/postman_api.json* )
+- Web API Docs ( *It's now available, You can preview it at  /Server/postman_api.json, or read code in /Server/api.py* )
 
 - Web UI 
 - Command Line
